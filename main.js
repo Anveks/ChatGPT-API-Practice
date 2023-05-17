@@ -41,7 +41,7 @@ function generatePrompt(language, difficulty, count) {
 async function getCompletion(prompt){
 
   // API key:
-  const apiKey = "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"; // My Test Key
+  const apiKey = ""; // My Test Key
 
   // URL:
   const url = "https://api.openai.com/v1/completions";
