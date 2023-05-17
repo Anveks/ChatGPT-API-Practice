@@ -32,7 +32,7 @@ async function generate(){
 
 function generatePrompt(language, difficulty, count) {
   let prompt = `
-    Write ${count} job interview questions for ${language} programming language. Each question should be suitable for ${difficulty} level of programming. 
+    Write ${count} job interview questions for ${language} programming language. Each question should be suitable for ${difficulty} level of programming. Each question should be enumerated and wrapped as html paragraph. Under each question place hidden answer that can be collapsed by user click. 
   `;
 
   return prompt.trim();
@@ -41,7 +41,7 @@ function generatePrompt(language, difficulty, count) {
 async function getCompletion(prompt){
 
   // API key:
-  const apiKey = "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"; // My Test Key
+  const apiKey = "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"; // My Test Key
 
   // URL:
   const url = "https://api.openai.com/v1/completions";
